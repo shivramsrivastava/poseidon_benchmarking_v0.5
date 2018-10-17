@@ -1,0 +1,20 @@
+1.11.1
+
+10 workers
+1 master
+
+
+ubuntu@benchmarking-master:~$ kubectl get nodes
+NAME                  STATUS    ROLES     AGE       VERSION
+benchmarking-master   Ready     master    20m       v1.11.1
+worker--10            Ready     <none>    14m       v1.11.1
+worker--3             Ready     <none>    1m        v1.11.1
+worker--5             Ready     <none>    14m       v1.11.1
+worker--6             Ready     <none>    14m       v1.11.1
+worker--7             Ready     <none>    14m       v1.11.1
+worker--8             Ready     <none>    14m       v1.11.1
+worker--9             Ready     <none>    14m       v1.11.1
+worker1               Ready     <none>    14m       v1.11.1
+worker2               Ready     <none>    14m       v1.11.1
+worker4               Ready     <none>    14m       v1.11.1
+
