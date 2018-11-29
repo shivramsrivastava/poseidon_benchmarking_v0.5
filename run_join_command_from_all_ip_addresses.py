@@ -16,7 +16,7 @@ print ips
 for ip in ips:
    cmd_part1 = "ssh -i ~/.ssh/kubemarkkey.pem -t ubuntu@%s " % ip
    #paste your join command as cmd_part2
-   cmd_part2 = "sudo kubeadm join 11.12.14.30:6443 --token fpm7kp.6vh12qpccupspjde --discovery-token-ca-cert-hash sha256:5deb1412a4652acfc342434a3987ff12a26e0cf888d0434e5316ee5b3d2adb7e"
+   cmd_part2 = "sudo kubeadm join 11.12.14.30:6443 --token sxe17x.0jdecw6964019zuk --discovery-token-ca-cert-hash sha256:d44fc09fcee64c88cf558a15dedd07f01a5f6ea3d335d50ccd5eba7c861b7a95"
    cmd = cmd_part1 + cmd_part2
    os.system(cmd)
    print "Joined %s to master...." % ip

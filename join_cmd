@@ -1,0 +1,1 @@
+kubeadm join 11.12.14.30:6443 --token sxe17x.0jdecw6964019zuk --discovery-token-ca-cert-hash sha256:d44fc09fcee64c88cf558a15dedd07f01a5f6ea3d335d50ccd5eba7c861b7a95

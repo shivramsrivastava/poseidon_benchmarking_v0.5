@@ -15,7 +15,8 @@ print ips
 
 for ip in ips:
    cmd_part1 = "ssh -i ~/.ssh/kubemarkkey.pem -t ubuntu@%s " % ip
-   cmd_part2 = "\"printf 'y\\ny\\ny\\n' | /home/ubuntu/delete_if_needed4/setup_docker_17.03_kubeadm_v1.11.1.sh\""
+   #paste your join command as cmd_part2
+   cmd_part2 = "cat /proc/sys/net/bridge/bridge-nf-call-iptables"
    cmd = cmd_part1 + cmd_part2
    os.system(cmd)
-   print "DONE INSTALLING on %s" % ip
+   print "Joined %s to master...." % ip
